@@ -92,4 +92,48 @@ public class DateUtilTest {
 	    System.out.println(date);	
 	}
 	
+	//Orange Table test cases
+	
+	@Test
+	public void testMaxMay1ShouldIncrementToMay2() {
+		DateUtil date = new DateUtil(1, 6, 1994);
+		System.out.println("MaxMay1ShouldIncrementToMay2 > " + date);
+		date.increment();
+	    System.out.println(date);	
+	}
+	
+	@Test
+	public void testMaxMay2ShouldIncrementToMay3() {
+		DateUtil date = new DateUtil(2, 6, 1994);
+		System.out.println("MaxMay2ShouldIncrementToMay3 > " + date);
+		date.increment();
+	    System.out.println(date);	
+	}
+	
+	@Test
+	public void testMaxMay15ShouldIncrementToMay16() {
+		DateUtil date = new DateUtil(15, 6, 2024);
+		System.out.println("MaxMay6ShouldIncrementToMay15 > " + date);
+		date.increment();
+	    System.out.println(date);	
+	}
+	
+	//for leap year testing test cases
+	
+	@Test
+	public void testMaxFeb29ShouldDecrementToMarch1_A() {
+		DateUtil date = new DateUtil(29, 2, 2024);
+		System.out.println("Feb29ShouldDecrementToMarch1_A > " + date);
+		date.increment();
+	    System.out.println(date);	
+	}
+	
+	@Test
+	public void testMaxFeb29ShouldDecrementToMarch1_B() {
+		DateUtil date = new DateUtil(28, 2, 2023);
+		System.out.println("Feb29ShouldDecrementToMarch1_B > " + date);
+		date.increment();
+	    System.out.println(date);	
+	}
+	
 }
