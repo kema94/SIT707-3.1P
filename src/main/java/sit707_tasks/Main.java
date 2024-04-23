@@ -48,6 +48,9 @@ public class Main
         date = new DateUtil(1, 1, 2024);
         System.out.println(date);
         date.decrement();
-        System.out.println(date);        
+        System.out.println(date); 
+        System.out.println("January min: decrement should be 31 December previous year.");
+      
+        
     }
 }

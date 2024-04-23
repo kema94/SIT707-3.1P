@@ -58,6 +58,7 @@ public class DateUtilTest {
 	 * Complete below test cases.
 	 */
 	
+	
 	@Test
 	public void testMinJanuary1ShouldIncrementToJanuary2() {
 		DateUtil date = new DateUtil(1, 1, 2024);
@@ -92,8 +93,116 @@ public class DateUtilTest {
 	    System.out.println(date);	
 	}
 	
+	
+	//Green Table test cases
+	
+	//1A
+	@Test
+	public void testCaseOneA() {
+		DateUtil date = new DateUtil(1, 6, 1994);
+		System.out.println("1A > " + date);
+		date.decrement();
+	    System.out.println(date);	
+	}
+	//2A
+	@Test
+	public void testCaseTwoA() {
+		DateUtil date = new DateUtil(2, 6, 1994);
+		System.out.println("2A > " + date);
+		date.decrement();
+	    System.out.println(date);	
+	}
+	//3A
+	@Test
+	public void testCaseThreeA() {
+		DateUtil date = new DateUtil(15, 6, 1994);
+		System.out.println("3A > " + date);
+		date.decrement();
+	    System.out.println(date);	
+	}
+	//4A
+		@Test
+		public void testCaseFourA() {
+			DateUtil date = new DateUtil(30, 6, 1994);
+			System.out.println("4A > " + date);
+			date.decrement();
+		    System.out.println(date);	
+		}
+	//5A
+	@Test
+	    public void testCaseFiveA() {
+		    DateUtil date = new DateUtil(31, 6, 1994);
+			System.out.println("5A > " + date);
+			date.decrement();
+			System.out.println(date);	
+		}
+	//6A
+		@Test
+		    public void testCaseSixA() {
+			    DateUtil date = new DateUtil(15, 1, 1994);
+				System.out.println("6A > " + date);
+				date.decrement();
+				System.out.println(date);	
+			}
+	//7A
+        @Test
+		    public void testCaseSevenA() {
+			    DateUtil date = new DateUtil(15, 2, 1994);
+				System.out.println("7A > " + date);
+				date.decrement();
+				System.out.println(date);	
+			}
+    //8A
+        @Test
+		    public void testCaseEightA() {
+			    DateUtil date = new DateUtil(15, 11, 1994);
+				System.out.println("8A > " + date);
+				date.decrement();
+				System.out.println(date);	
+			} 
+    //9A
+        @Test
+		    public void testCaseNineA() {
+			    DateUtil date = new DateUtil(15, 12, 1994);
+				System.out.println("(9A > " + date);
+				date.decrement();
+				System.out.println(date);	
+			} 
+    //10A
+        @Test
+		    public void testCaseTenA() {
+			    DateUtil date = new DateUtil(15, 6, 1700);
+				System.out.println("10A > " + date);
+				date.decrement();
+				System.out.println(date);	
+			} 
+    //11A
+        @Test
+		    public void testCaseElevenA() {
+			    DateUtil date = new DateUtil(15, 6, 1701);
+				System.out.println("11A > " + date);
+				date.decrement();
+				System.out.println(date);	
+			}
+     //12A
+        @Test
+		    public void testCaseTwelveA() {
+			    DateUtil date = new DateUtil(15, 6, 2023);
+				System.out.println("12A > " + date);
+				date.decrement();
+				System.out.println(date);	
+			} 
+      //13A
+        @Test
+		    public void testCaseThirteenA() {
+			    DateUtil date = new DateUtil(15, 6, 2024);
+				System.out.println("13A > " + date);
+				date.decrement();
+				System.out.println(date);	
+			} 
 	//Orange Table test cases
 	
+	//1B test case 
 	@Test
 	public void testMaxMay1ShouldIncrementToMay2() {
 		DateUtil date = new DateUtil(1, 6, 1994);
@@ -102,6 +211,7 @@ public class DateUtilTest {
 	    System.out.println(date);	
 	}
 	
+	//2B test case 
 	@Test
 	public void testMaxMay2ShouldIncrementToMay3() {
 		DateUtil date = new DateUtil(2, 6, 1994);
@@ -110,6 +220,7 @@ public class DateUtilTest {
 	    System.out.println(date);	
 	}
 	
+	//13B test case 
 	@Test
 	public void testMaxMay15ShouldIncrementToMay16() {
 		DateUtil date = new DateUtil(15, 6, 2024);
